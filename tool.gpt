@@ -1,5 +1,4 @@
 Name: Weather Tool
-Description: A tool to get current weather for a city
-Args: city: The name of the city to get weather for
+Description: Get weather
 
-#!/usr/bin/python3 ${GPTSCRIPT_CONFIG_DIR}/main.py '{"city": "${city}"}'
+#!/usr/bin/python3 ${GPTSCRIPT_CONFIG_DIR}/main.py
