@@ -1,4 +1,0 @@
-Name: Weather Tool
-Description: Get weather
-
-#!/usr/bin/python3 ${GPTSCRIPT_CONFIG_DIR}/main.py
