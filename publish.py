@@ -131,23 +131,27 @@ def choose_version(
 
 def catalog_markdown(name: str, package_name: str, version: str) -> str:
     if name == "card-verify-mcp":
-        display_name = "证照鉴伪"
-        short = "根据图片 URL 核验行驶证等证照，调用 id-vision cardVerify 接口。"
-        description = f"""根据证照图片 URL 做鉴伪/识别，适合行驶证等现场核验场景。
+        return f"""# Obot Catalog Entry（UVX + Git，发布时覆盖写入）
 
-## 功能
-- 提交图片 URL，调用 `card_verify`
-- 支持证照类型（默认 `VEHICLE_LICENSE`）和正反面（`FRONT` / `BACK`）
-- 凭证通过环境变量注入，不写进代码
+## Name
+证照鉴伪
 
-## 使用前需要
-- **App Id**：`CARD_VERIFY_APP_ID`（请求头 `X-App-Id`）
-- **API Key**：`CARD_VERIFY_API_KEY`（请求头 `X-Api-Key`）
-- **Base URL**（可选）：`CARD_VERIFY_BASE_URL`
+## Short Description
+根据图片 URL 核验行驶证等证照，调用 id-vision cardVerify 接口。
 
-UVX 包名：`{package_name}=={version}`
-"""
-        extra_env = """
+## Description
+根据证照图片 URL 做鉴伪/识别，适合行驶证等现场核验场景。
+
+## Server Tenancy / Type
+Single-tenant
+
+## Runtime（UVX + Git）
+- Runtime: UVX
+- Package: `git+https://github.com/zxh258147/my-obot-skills.git#subdirectory=card-verify-mcp`
+- Command: `obot-card-verify-mcp`
+
+不要开 OAuth。Type 不要选 Multi-tenant。PyPI 备用包名：`{package_name}=={version}`
+
 ## Obot 环境变量
 - CARD_VERIFY_APP_ID（必填）
 - CARD_VERIFY_API_KEY（必填，敏感）
