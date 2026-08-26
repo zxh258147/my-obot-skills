@@ -17,7 +17,7 @@ Single-tenant
 - Package: `git+https://github.com/zxh258147/my-obot-skills.git#subdirectory=card-verify-mcp`
 - Command: `obot-card-verify-mcp`
 
-不要开 OAuth。Type 不要选 Multi-tenant。PyPI 备用包名：`obot-card-verify-mcp==0.1.2`
+不要开 OAuth。Type 不要选 Multi-tenant。PyPI 备用包名：`obot-card-verify-mcp==0.1.3`
 
 ## Obot 环境变量
 - CARD_VERIFY_APP_ID（必填）
