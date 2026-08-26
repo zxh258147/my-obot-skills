@@ -15,14 +15,14 @@
 - `get_forecast`：三日预报
 - 支持中文城市名：北京 / 上海 / 广州 / 深圳 / 纽约
 
-UVX 包名：`obot-weather-mcp==0.1.1`
+UVX 包名：`obot-weather-mcp==0.1.2`
 
 ## Server Tenancy / Type
 Multi-tenant
 
 ## Runtime
 - Runtime: UVX
-- Package: `obot-weather-mcp==0.1.1`
+- Package: `obot-weather-mcp==0.1.2`
 
 ## Obot 环境变量
 无需配置。

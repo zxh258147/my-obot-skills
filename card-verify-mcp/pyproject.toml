@@ -1,6 +1,6 @@
 [project]
 name = "obot-card-verify-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "STDIO MCP server that wraps the id-vision cardVerify API"
 requires-python = ">=3.11"
 dependencies = [
